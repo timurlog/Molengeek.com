@@ -1,18 +1,160 @@
-/* ########### HEADER ########### */
+// /* ########### HEADER ########### */
+// .container
+//   max-width: 1120px
+//   margin-inline: 1.5rem
+
+// .header
+//     position: fixed
+//     top: 0
+//     left: 0
+//     width: 100%
+//     height: 3.5rem
+//     background: #F7E361
+//     box-shadow: 0 2px 16px hsla(52, 98%, 48%, .3)
+//     z-index: 100
+
+// .nav
+//     height: 100%
+
+// .nav-logo
+//     margin-left: 15px
+//     height: 100%
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     .nav-logo-img
+//         height: 80%
+
+// .nav-burger, .nav-close
+//     color: #000
+
+// .nav-data
+//     height: 3.5rem
+//     width: 100%
+//     display: flex
+//     justify-content: space-between
+//     align-items: center
+
+// .nav-toggle
+//     position: relative
+//     width: 32px
+//     height: 32px
+
+// .nav-burger, .nav-close
+//     position: absolute
+//     width: max-content
+//     height: max-content
+//     inset: 0
+//     margin: auto
+//     font-size: 1.25rem
+//     cursor: pointer
+//     transition: opacity .1s, transform .4s
+
+// .nav-close
+//     opacity: 0
+
+// .nav-link
+//     color: #000 !important
+//     background: #F7E361 !important
+//     font-family: "lt-wave-bold"
+//     padding: 1.25rem 1.5rem !important
+//     margin: 0 !important
+//     display: flex !important
+//     justify-content: space-between
+//     align-items: center
+//     cursor: pointer
+//     transition: background .3s
+
+// .nav-link:hover
+//     background: #F2D202 !important
 
 
-/* ######### RESPONSIVE ######### */
-/* ### SMARTPHONE ### */
-@media (max-width: 576px)
+// /* ######### RESPONSIVE ######### */
+// /* ### SMARTPHONE ### */
+// @media screen and (max-width: 1118px)
+//     .nav-menu
+//         position: absolute
+//         left: 0
+//         top: 2.5rem
+//         width: 100%
+//         height: calc( 100vh - 3.5rem )
+//         overflow: auto
+//         pointer-events: none
+//         opacity: 0
+//         transition: top .4s, opacity .3s
+//     .nav-menu::-webkit-scrollbar
+//         width: 0
+//     .nav-list
+//         background: #F7E361
+//         padding: 0
+//         margin: 0
+//         padding-top: 1rem
 
+// .show-menu
+//     opacity: 1
+//     top: 3.5rem
+//     pointer-events: initial
 
-/* ### TABLET ### */
-@media (min-width: 577px) and (max-width: 768px)
+// .show-icon .nav-burger
+//     opacity: 0
+//     transform: rotate(90deg)
 
+// .show-icon .nav-close
+//     opacity: 1
+//     transform: rotate(90deg)
 
-/* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 1024px)
+// .dropdown--item
+//     cursor: pointer
 
+// .dropdown-arrow
+//     font-size: 1.25rem !important
+//     transition: transform .4s
 
-/* ### BIG DESKTOP ### */
-@media (min-width: 1025px)
+// .dropdown--link
+//     list-style: none !important
+//     text-decoration: none !important
+//     padding: 1.25rem 1.25rem 1.25rem 2.5rem !important
+//     color: #000 !important
+//     background: #F2D202 !important
+//     display: flex
+//     align-items: center
+//     column-gap: .5rem
+//     font-family: "lt-wave-bold" !important
+//     transition: background .3s
+
+// .dropdown--link:hover
+//     background: #E4C812 !important
+
+// .dropdown--menu
+//     padding: 0 !important
+//     max-height: 0
+//     overflow: hidden
+//     transition: max-height .4s ease-out
+
+// .dropdown--item:hover .dropdown--menu
+//     max-height: 1000px
+//     transition: max-height .4s ease-in
+
+// .dropdown--item:hover .dropdown-arrow
+//     transform: rotate(180deg)
+
+// @media screen and (max-width: 340px)
+//     .container
+//         margin-inline: 1rem
+
+//     .nav-link
+//         padding-inline: 1rem
+
+// @media screen and (min-width: 1118px)
+//     .container
+//         margin-inline: auto
+//     .nav
+//         height: calc( 3.5rem + 2rem )
+//         display: flex
+//         justify-content: space-between
+//     .nav-toggle
+//         display: none
+//     .nav-list
+//         height: 100%
+//         display: flex
+//         column-gap: 3rem
