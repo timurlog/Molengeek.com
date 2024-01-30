@@ -1,18 +1,220 @@
-// /* ########### HEADER ########### */
-
+/* ########### HEADER ########### */
+.header
+    height: 75px
+    width: 100%
+    background: #F7E361
+    .header-nav
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-right: 30px
+        padding-left: 15px
+        .nav-data
+            height: 100%
+            padding: 0 15px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .nav-logo
+                display: flex
+                justify-content: center
+                align-items: center 
+                height: 100%
+                img
+                    height: 40%
+            .nav-toggle
+                position: relative
+                width: 32px
+                height: 32px
+                display: none
+                justify-content: center
+                align-items: center
+                .nav-burger, .nav-close
+                    position: absolute
+                    width: max-content
+                    height: max-content
+                    font-size: 24px
+                    cursor: pointer
+                    transition: opacity .1s, transform .4s
+    
+        .nav-menu
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            .nav-list
+                display: flex
+                align-items: center
+                justify-content: center
+                gap: 25px
+                .nav-list-link
+                    position: relative
+                    text-decoration: none !important
+                    list-style: none !important
+                    color: #000
+                    width: fit-content
+                    font-size: 18px
+                    font-family: "lt-wave-bold"
+                    transition: all .3s ease
+                .nav-list-link:hover
+                    color: #843A91
+                .nav-list-link:active
+                    transition: all 0.1s ease
+                    color: #632B6C
+                .active
+                    color: #843A91
+                .contact-us
+                    padding-left: 100px
+                .nav-list-dropdown
+                    .nav-list-link
+                        position: relative
+                        cursor: pointer
+                        text-decoration: none !important
+                        list-style: none !important
+                        color: #000
+                        width: fit-content
+                        font-size: 18px
+                        font-family: "lt-wave-bold"
+                        transition: all .3s ease
+                    .nav-list-link:hover
+                        color: #843A91
+                    .nav-list-link:active
+                        transition: all 0.1s ease
+                        color: #632B6C
+                    .nav-dropdown-menu
+                        background: #F7E361
+                        border-left: #843A91 4px solid
+                        position: absolute
+                        display: flex
+                        max-height: 0
+                        padding: 0
+                        overflow: hidden
+                        opacity: 0
+                        flex-direction: column
+                        align-items: flex-start
+                        justify-content: center
+                        gap: 10px
+                        transition: all 0.3s ease
+                        .dropdown-menu-link
+                            cursor: pointer
+                            padding: 0px 20px
+                            text-decoration: none !important
+                            list-style: none !important
+                            color: #000
+                            font-size: 18px
+                            font-family: "lt-wave-bold"
+                            transition: all .3s ease
+                        .dropdown-menu-link:hover
+                            color: #843A91
+                        .dropdown-menu-link:active
+                            transition: all 0.1s ease
+                            color: #632B6C
+                .nav-list-dropdown:hover  .nav-dropdown-menu
+                    opacity: 1
+                    height: 86px
+                    max-height: 1000px
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
 @media (max-width: 576px)
-
-
-/* ### TABLET ### */
-@media (min-width: 577px) and (max-width: 768px)
-
+    .header
+        .header-nav
+            flex-direction: row
+            padding: 0
+            .nav-data
+                width: 100%
+                .nav-toggle
+                    display: flex
+            .nav-menu
+                height: 100%
+                display: flex
+                .nav-list
+                    opacity: 0
+                    top: -350px
+                    padding: 15px 0
+                    width: 100%
+                    background: #F7E361
+                    position: absolute
+                    flex-direction: column
+                    align-items: flex-start
+                    left: 0
+                    gap: 15px
+                    transition: all 0.3s ease
+                    .nav-list-link
+                        padding-left: 15px
+                    .contact-us
+                        padding-left: 0px
+                    .nav-list-dropdown
+                        width: 100%
+                        .nav-list-link
+                            display: flex
+                            padding-right: 15px
+                            justify-content: space-between
+                            width: 100%
+                        .nav-dropdown-menu
+                            position: relative
+                            left: 0
+                            width: 100%
 
 /* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 1024px)
+@media (min-width: 577px) and (max-width: 1350px)
+    .header
+        .header-nav
+            flex-direction: row
+            .nav-data
+                width: 100%
+                .nav-toggle
+                    display: flex
+            .nav-menu
+                height: 100%
+                display: flex
+                .nav-list
+                    opacity: 0
+                    top: -350px
+                    padding: 15px 0
+                    width: 100%
+                    background: #F7E361
+                    position: absolute
+                    flex-direction: column
+                    align-items: flex-start
+                    left: 0
+                    gap: 15px
+                    transition: all 0.3s ease
+                    .nav-list-link
+                        padding-left: 15px
+                    .contact-us
+                        padding-left: 0px
+                    .nav-list-dropdown
+                        width: 100%
+                        .nav-list-link
+                            display: flex
+                            padding-right: 15px
+                            justify-content: space-between
+                            width: 100%
+                        .nav-dropdown-menu
+                            position: relative
+                            left: 0
+                            width: 100%
 
 
-/* ### BIG DESKTOP ### */
-@media (min-width: 1025px)
+@media (min-width: 1351px) and (max-width: 1444px)
+    .header
+        .header-nav
+            .nav-menu
+                .nav-list
+                    .contact-us
+                        padding-left: 25px
+.show-menu
+    opacity: 1 !important
+    top: 75px !important
+
+.nav-close
+    opacity: 0
+
+.show-icon .nav-burger
+    opacity: 0
+    transform: rotate(90deg)
+.show-icon .nav-close
+    opacity: 1
+    transform: rotate(90deg)
