@@ -668,7 +668,7 @@ h2 span {
 }
 .partners .part-content .logos .logos-slide {
   display: inline-block;
-  animation: slide 20s infinite linear;
+  animation: slide 25s infinite linear;
 }
 .partners .part-content .logos .logos-slide img {
   height: 75px;
