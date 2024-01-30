@@ -1,18 +1,186 @@
 /* ### SECTION WHAT IS IT ### */
+.what-is-it
+    width: 100%
+    .wii-content
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        .wii-title
+            margin-top: 50px !important
+        .wii-texts
+            margin-top: 25px !important
+            width: 1000px
+            display: flex
+            flex-direction: column
+            align-items: center
+            .text
+                text-align: center
+                font-size: 24px
+            .text-list
+                margin-bottom: 50px !important
+                margin-top: 25px !important
+                font-size: 28px
+                padding: 0
+                li
+                    font-weight: 600
+                    padding-bottom: 10px
+                    span
+                        color: #843A91
+                li::before
+                    content: "\f0da"
+                    font-family: FontAwesome
+                    display: inline-block
+                    color: #843A91
+                    font-size: 22px
+                    margin-right: 10px
+        .wii-links
+            width: 100%
+            background: #F7E361
+            padding: 50px 0
+            .links-cards
+                display: flex
+                justify-content: space-evenly
+                #coworking
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/image/wii/coworking.png')
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-size: cover
+                #formation
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/image/wii/formation.jpg')
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-size: cover
+                #agenda
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/image/wii/agenda.jpg')
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-size: cover
+                #agenda:hover
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/image/wii/agenda.jpg')
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-size: cover
+                #formation:hover
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/image/wii/formation.jpg')
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-size: cover
+                #coworking:hover
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/image/wii/coworking.png')
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-size: cover
+                .links-card
+                    margin: 15px !important
+                    height: 300px
+                    width: 412px
+                    border-radius: 10px
+                    border: 5px #F7E361 solid
+                    transition: all 0.3s ease
+                .links-card:hover
+                    border: 5px #843A91 solid
+                    margin: 0 !important
+                    height: 330px
+                    width: 442px
+                .links-card
+                    div
+                        height: 100%
+                        width: 100%
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                        gap: 30px
+                        h3
+                            font-family: "lt-wave-bold" !important
+                            font-size: 32px !important
+                            color: #F7E361
+                        button
+                            padding: 10px 20px
+                            border-radius: 8px
+                            background: #F7E361
+                            border: none
+                            font-family: "lt-wave-regular"
+                            color: #212529
+                        button:hover
+                            background: #F2D202
 
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
-@media (max-width: 576px)
-
+@media (max-width: 577px)
+    .what-is-it
+        .wii-content
+            .wii-title
+                width: 320px
+                h2
+                    font-size: 26px !important
+            .wii-texts
+                width: 320px
+                display: block
+                .text
+                    font-size: 16px
+                .text-list
+                    font-size: 22px !important
+                li::before
+                    font-size: 18px
+            .wii-links
+                width: 100%
+                background: #F7E361
+                padding: 50px 0
+                .links-cards
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    gap: 10px
+                    .links-card
+                        width: 80%
+                    .links-card:hover
+                        width: 85%
 
 /* ### TABLET ### */
-@media (min-width: 577px) and (max-width: 768px)
-
+@media (min-width: 578px) and (max-width: 794px)
+    .what-is-it
+        .wii-content
+            .wii-title
+                width: 500px
+            .wii-texts
+                width: 500px
+                display: block
+            .wii-links
+                width: 100%
+                background: #F7E361
+                padding: 50px 0
+                .links-cards
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    gap: 10px
+                    .links-card
+                        width: 80%
+                    .links-card:hover
+                        width: 85%
 
 /* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 1024px)
-
-
-/* ### BIG DESKTOP ### */
-@media (min-width: 1025px)
+@media (min-width: 795px) and (max-width: 1120px)
+    .what-is-it
+        .wii-content
+            .wii-title
+            .wii-texts
+                width: 750px
+                li
+                        width: 600px
+            .wii-links
+                width: 100%
+                background: #F7E361
+                padding: 50px 0
+                .links-cards
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    gap: 10px
+                    .links-card
+                        width: 80%
+                    .links-card:hover
+                        width: 85%

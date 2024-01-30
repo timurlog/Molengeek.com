@@ -423,11 +423,228 @@ h2 span {
   }
 }
 /* ### SECTION WHAT IS IT ### */
+.what-is-it {
+  width: 100%;
+}
+.what-is-it .wii-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.what-is-it .wii-content .wii-title {
+  margin-top: 50px !important;
+}
+.what-is-it .wii-content .wii-texts {
+  margin-top: 25px !important;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.what-is-it .wii-content .wii-texts .text {
+  text-align: center;
+  font-size: 24px;
+}
+.what-is-it .wii-content .wii-texts .text-list {
+  margin-bottom: 50px !important;
+  margin-top: 25px !important;
+  font-size: 28px;
+  padding: 0;
+}
+.what-is-it .wii-content .wii-texts .text-list li {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.what-is-it .wii-content .wii-texts .text-list li span {
+  color: #843A91;
+}
+.what-is-it .wii-content .wii-texts .text-list li::before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #843A91;
+  font-size: 22px;
+  margin-right: 10px;
+}
+.what-is-it .wii-content .wii-links {
+  width: 100%;
+  background: #F7E361;
+  padding: 50px 0;
+}
+.what-is-it .wii-content .wii-links .links-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.what-is-it .wii-content .wii-links .links-cards #coworking {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/image/wii/coworking.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.what-is-it .wii-content .wii-links .links-cards #formation {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/image/wii/formation.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.what-is-it .wii-content .wii-links .links-cards #agenda {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/image/wii/agenda.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.what-is-it .wii-content .wii-links .links-cards #agenda:hover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/image/wii/agenda.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.what-is-it .wii-content .wii-links .links-cards #formation:hover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/image/wii/formation.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.what-is-it .wii-content .wii-links .links-cards #coworking:hover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/image/wii/coworking.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.what-is-it .wii-content .wii-links .links-cards .links-card {
+  margin: 15px !important;
+  height: 300px;
+  width: 412px;
+  border-radius: 10px;
+  border: 5px #F7E361 solid;
+  transition: all 0.3s ease;
+}
+.what-is-it .wii-content .wii-links .links-cards .links-card:hover {
+  border: 5px #843A91 solid;
+  margin: 0 !important;
+  height: 330px;
+  width: 442px;
+}
+.what-is-it .wii-content .wii-links .links-cards .links-card div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.what-is-it .wii-content .wii-links .links-cards .links-card div h3 {
+  font-family: "lt-wave-bold" !important;
+  font-size: 32px !important;
+  color: #F7E361;
+}
+.what-is-it .wii-content .wii-links .links-cards .links-card div button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #F7E361;
+  border: none;
+  font-family: "lt-wave-regular";
+  color: #212529;
+}
+.what-is-it .wii-content .wii-links .links-cards .links-card div button:hover {
+  background: #F2D202;
+}
+
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
+@media (max-width: 577px) {
+  .what-is-it .wii-content .wii-title {
+    width: 320px;
+  }
+  .what-is-it .wii-content .wii-title h2 {
+    font-size: 26px !important;
+  }
+  .what-is-it .wii-content .wii-texts {
+    width: 320px;
+    display: block;
+  }
+  .what-is-it .wii-content .wii-texts .text {
+    font-size: 16px;
+  }
+  .what-is-it .wii-content .wii-texts .text-list {
+    font-size: 22px !important;
+  }
+  .what-is-it .wii-content .wii-texts li::before {
+    font-size: 18px;
+  }
+  .what-is-it .wii-content .wii-links {
+    width: 100%;
+    background: #F7E361;
+    padding: 50px 0;
+  }
+  .what-is-it .wii-content .wii-links .links-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .what-is-it .wii-content .wii-links .links-cards .links-card {
+    width: 80%;
+  }
+  .what-is-it .wii-content .wii-links .links-cards .links-card:hover {
+    width: 85%;
+  }
+}
 /* ### TABLET ### */
+@media (min-width: 578px) and (max-width: 794px) {
+  .what-is-it .wii-content .wii-title {
+    width: 500px;
+  }
+  .what-is-it .wii-content .wii-texts {
+    width: 500px;
+    display: block;
+  }
+  .what-is-it .wii-content .wii-links {
+    width: 100%;
+    background: #F7E361;
+    padding: 50px 0;
+  }
+  .what-is-it .wii-content .wii-links .links-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .what-is-it .wii-content .wii-links .links-cards .links-card {
+    width: 80%;
+  }
+  .what-is-it .wii-content .wii-links .links-cards .links-card:hover {
+    width: 85%;
+  }
+}
 /* ### DESKTOP ### */
-/* ### BIG DESKTOP ### */
+@media (min-width: 795px) and (max-width: 1120px) {
+  .what-is-it .wii-content .wii-texts {
+    width: 750px;
+  }
+  .what-is-it .wii-content .wii-texts li {
+    width: 600px;
+  }
+  .what-is-it .wii-content .wii-links {
+    width: 100%;
+    background: #F7E361;
+    padding: 50px 0;
+  }
+  .what-is-it .wii-content .wii-links .links-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .what-is-it .wii-content .wii-links .links-cards .links-card {
+    width: 80%;
+  }
+  .what-is-it .wii-content .wii-links .links-cards .links-card:hover {
+    width: 85%;
+  }
+}
 /* ########### FOOTER ########### */
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
