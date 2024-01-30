@@ -477,37 +477,40 @@ h2 span {
   justify-content: space-evenly;
 }
 .what-is-it .wii-content .wii-links .links-cards #coworking {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/image/wii/coworking.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/image/wii/coworking.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 0.3s ease;
 }
 .what-is-it .wii-content .wii-links .links-cards #formation {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/image/wii/formation.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/image/wii/formation.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 0.3s ease;
 }
 .what-is-it .wii-content .wii-links .links-cards #agenda {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/image/wii/agenda.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/image/wii/agenda.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 0.3s ease;
 }
 .what-is-it .wii-content .wii-links .links-cards #agenda:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/image/wii/agenda.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/image/wii/agenda.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .what-is-it .wii-content .wii-links .links-cards #formation:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/image/wii/formation.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/image/wii/formation.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .what-is-it .wii-content .wii-links .links-cards #coworking:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/image/wii/coworking.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/image/wii/coworking.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
