@@ -22,6 +22,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FEFBEB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F7E361;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F2D202;
+}
+
 /* ########### HEADER ########### */
 .header {
   height: 75px;
@@ -84,7 +101,7 @@ body {
   position: relative;
   text-decoration: none !important;
   list-style: none !important;
-  color: #000;
+  color: #321536;
   width: fit-content;
   font-size: 18px;
   font-family: "lt-wave-bold";
@@ -108,7 +125,7 @@ body {
   cursor: pointer;
   text-decoration: none !important;
   list-style: none !important;
-  color: #000;
+  color: #321536;
   width: fit-content;
   font-size: 18px;
   font-family: "lt-wave-bold";
@@ -141,7 +158,7 @@ body {
   padding: 0px 20px;
   text-decoration: none !important;
   list-style: none !important;
-  color: #000;
+  color: #321536;
   font-size: 18px;
   font-family: "lt-wave-bold";
   transition: all 0.3s ease;
@@ -284,12 +301,128 @@ body {
 }
 
 /* ############ MAIN ############ */
+p {
+  color: #321536;
+  font-size: 18px;
+}
+
+h2 {
+  font-family: "lt-wave-bold";
+  text-align: center;
+  color: #321536;
+  font-size: 48px !important;
+}
+h2 span {
+  color: #843A91;
+}
+
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
 /* ### TABLET ### */
 /* ### DESKTOP ### */
 /* ### BIG DESKTOP ### */
-/* ### SECTION 1 ### */
+/* ### SECTION BANNER ### */
+.banner {
+  height: 92vh;
+  width: 100%;
+  background: url("../assets/image/banner-bg/banner-bg-dark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.banner .banner-content {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: left;
+  gap: 15px;
+}
+.banner .banner-content .slogan-p {
+  font-size: 40px;
+  width: 100%;
+  font-weight: 600;
+  color: #FFF;
+  text-align: center;
+}
+.banner .banner-content .slogan-h {
+  font-size: 80px;
+  font-family: "lt-wave-bold";
+  color: #FFF;
+}
+.banner .banner-content .slogan-h span {
+  color: #843A91;
+}
+.banner .banner-content .mini-slogan {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #FFF;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .banner .banner-content {
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .banner .banner-content .slogan-p {
+    font-size: 26px;
+    width: 100%;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+  }
+  .banner .banner-content .slogan-h {
+    font-size: 52px;
+    font-family: "lt-wave-bold";
+    color: #FFF;
+  }
+  .banner .banner-content .slogan-h span {
+    color: #843A91;
+  }
+  .banner .banner-content .mini-slogan {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #FFF;
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .banner .banner-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 974px) {
+  .banner .banner-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* ### SECTION WHAT IS IT ### */
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
 /* ### TABLET ### */
