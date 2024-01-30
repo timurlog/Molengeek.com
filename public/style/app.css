@@ -318,6 +318,11 @@ h2 span {
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  h2 {
+    font-size: 26px !important;
+  }
+}
 /* ### TABLET ### */
 /* ### DESKTOP ### */
 /* ### BIG DESKTOP ### */
@@ -561,9 +566,6 @@ h2 span {
   .what-is-it .wii-content .wii-title {
     width: 320px;
   }
-  .what-is-it .wii-content .wii-title h2 {
-    font-size: 26px !important;
-  }
   .what-is-it .wii-content .wii-texts {
     width: 320px;
     display: block;
@@ -648,6 +650,56 @@ h2 span {
     width: 85%;
   }
 }
+/* ### SECTION PARTNERS ### */
+.partners {
+  width: 100%;
+}
+.partners .part-content {
+  display: flex;
+  flex-direction: column;
+}
+.partners .part-content .part-title {
+  margin-top: 50px !important;
+}
+.partners .part-content .logos {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+}
+.partners .part-content .logos .logos-slide {
+  display: inline-block;
+  animation: slide 20s infinite linear;
+}
+.partners .part-content .logos .logos-slide img {
+  height: 75px;
+  margin: 0 40px !important;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .partners .part-content .logos .logos-slide img {
+    height: 40px;
+    margin: 0 20px !important;
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .partners .part-content .logos .logos-slide img {
+    height: 50px;
+    margin: 0 30px !important;
+  }
+}
+/* ### DESKTOP ### */
+/* ### BIG DESKTOP ### */
 /* ########### FOOTER ########### */
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */

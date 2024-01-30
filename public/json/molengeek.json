@@ -172,35 +172,35 @@
     "partenaires": {
         "bxFormation": {
             "nom": "Bruxelles Formation",
-            "logo": "https://molengeek.com/wp-content/uploads/2022/02/f3f2da8615bcd41f571b40fbb5d12871.png"
+            "logo": "./public/assets/image/partners/bruxelles-formation.png"
         },
         "pwc": {
             "nom": "PWC",
-            "logo": "https://molengeek.com/wp-content/uploads/2022/02/logo-pwc-300x150.png"
+            "logo": "./public/assets/image/partners/pwc.png"
         },
         "aws": {
             "nom": "AWS",
-            "logo": "https://molengeek.com/wp-content/uploads/2022/02/logo-aws-restart-2x-300x105.png"
+            "logo": "./public/assets/image/partners/aws.png"
         },
         "Microsoft": {
             "nom": "Microsoft",
-            "logo": "https://molengeek.com/wp-content/uploads/2022/08/ezgif-1-55363425cb.png"
+            "logo": "./public/assets/image/partners/microsoft.png"
         },
         "google": {
             "nom": "Google",
-            "logo": "https://molengeek.com/wp-content/uploads/2022/02/580b57fcd9996e24bc43c51f-300x300.png"
+            "logo": "./public/assets/image/partners/google.png"
         },
         "proximus": {
             "nom": "Proximus",
-            "logo": "https://molengeek.com/wp-content/uploads/2022/02/proximus_2017-08-29-13-57-34_cache-300x300.png"
+            "logo": "./public/assets/image/partners/proximus.png"
         },
         "actiris": {
             "nom": "Actiris",
-            "logo": "https://molengeek.com/wp-content/uploads/2022/02/Actiris-300x300.png"
+            "logo": "./public/assets/image/partners/actiris.png"
         },
         "meta": {
             "nom": "Meta",
-            "logo": "https://molengeek.com/wp-content/uploads/2022/02/Meta-Logo-300x169.png"
+            "logo": "./public/assets/image/partners/meta.png"
         }
     },
     "reseauxSociaux": {

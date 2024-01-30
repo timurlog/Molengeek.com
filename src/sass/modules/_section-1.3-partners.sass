@@ -1,0 +1,53 @@
+/* ### SECTION PARTNERS ### */
+.partners
+    width: 100%
+    .part-content
+        display: flex
+        flex-direction: column
+        .part-title
+            margin-top: 50px !important
+        .logos
+            overflow: hidden
+            padding: 60px 0
+            white-space: nowrap
+            .logos-slide
+                display: inline-block
+                animation: slide 20s infinite linear
+                img
+                    height: 75px
+                    margin: 0 40px !important
+
+@keyframes slide
+    from
+        transform: translateX(0)
+    to
+        transform: translateX(-100%)
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px)
+    .partners
+        .part-content
+            .logos
+                .logos-slide
+                    img
+                        height: 40px
+                        margin: 0 20px !important
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px)
+    .partners
+        .part-content
+            .logos
+                .logos-slide
+                    img
+                        height: 50px
+                        margin: 0 30px !important
+                    
+
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1024px)
+
+
+/* ### BIG DESKTOP ### */
+@media (min-width: 1025px)
