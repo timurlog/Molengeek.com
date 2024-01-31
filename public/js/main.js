@@ -45,3 +45,35 @@ for (let i = 0; i < partnersSrc.length; i++) {
 for (let i = 0; i < partnersSrc.length; i++) {
     partnersSrc2[i].setAttribute('src', partnersSrcArray[i]);
 }
+
+let eventDate = document.querySelectorAll('.event-date p');
+let eventName = document.querySelectorAll('.event-name p');
+let eventDateTab = []
+let eventNameTab = []
+
+eventDate.forEach(element => {
+    eventDateTab.push(element)
+});
+
+eventName.forEach(element => {
+    eventNameTab.push(element)
+});
+
+let eventDateArray = [];
+let eventNameArray = [];
+const events = data.formations.seancesInfos;
+
+for (const eventKey in events) {
+    if (events.hasOwnProperty(eventKey)) {
+        const event = events[eventKey];
+        const date = event.date;
+        const name = event.nom;
+        eventDateArray.push(date);
+        eventNameArray.push(name);
+    }
+}
+
+for (let i = 0; i < eventDateTab.length; i++) {
+    eventDateTab[i].innerHTML = eventDateArray[i]
+    eventNameTab[i].innerHTML = eventNameArray[i]
+}

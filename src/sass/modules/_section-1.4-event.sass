@@ -1,0 +1,128 @@
+/* ### SECTION EVENT ### */
+.event
+    width: 100%
+    .event-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        .event-title
+            margin-top: 50px !important
+        .event-lists
+            display: flex
+            flex-direction: column
+            margin: 45px 0 !important
+            .list-event
+                cursor: default
+                width: 1000px
+                height: 70px
+                border-left: 5px solid #843A91
+                display: flex
+                align-items: center
+                justify-content: space-between
+                transition: all 0.3s ease
+                .event-date
+                    width: 25%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                .event-name
+                    width: 60%
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+                    text-transform: uppercase
+                    text-align: center
+                    p
+                        text-align: left
+            .list-event:hover
+                border-left: 20px solid #843A91
+        .event-button
+            width: 1000px
+            margin-bottom: 40px !important
+            button
+                cursor: pointer
+                padding: 10px 20px
+                border-radius: 8px
+                background: #F7E361
+                border: none
+                font-family: "lt-wave-regular"
+                color: #212529
+                transition: all .3s ease
+            button:hover
+                background: #F2D202
+
+
+.event-contact
+    width: 100%
+    background: linear-gradient(0deg, rgba(74, 32, 81, 0.5) 0%, rgba(74, 32, 81, 0.5) 100%), url('../assets/image/bg/bg-contact.webp')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
+    .ec-content
+        height: 350px
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        .ec-title
+            h2
+                color: #F2D202
+        .ec-btn
+            button
+                cursor: pointer
+                padding: 10px 20px
+                border-radius: 8px
+                background: #F7E361
+                border: none
+                font-family: "lt-wave-regular"
+                color: #212529
+                transition: all .3s ease
+            button:hover
+                background: #F2D202
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px)
+    .event
+        .event-content
+            width: 100%
+            padding: 0 30px
+            .event-lists
+                width: 100%
+                .list-event
+                    width: 100%
+                    .event-name
+                        p
+                            font-size: 12px !important
+            .event-button
+                width: 100%
+
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px)
+    .event
+        .event-content
+            width: 100%
+            padding: 0 30px
+            .event-lists
+                width: 100%
+                .list-event
+                    width: 100%
+            .event-button
+                width: 100%
+
+
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1080px)
+    .event
+        .event-content
+            width: 100%
+            padding: 0 30px
+            .event-lists
+                width: 100%
+                .list-event
+                    width: 100%
+            .event-button
+                width: 100%

@@ -549,12 +549,14 @@ h2 span {
   color: #F7E361;
 }
 .what-is-it .wii-content .wii-links .links-cards .links-card div button {
+  cursor: pointer;
   padding: 10px 20px;
   border-radius: 8px;
   background: #F7E361;
   border: none;
   font-family: "lt-wave-regular";
   color: #212529;
+  transition: all 0.3s ease;
 }
 .what-is-it .wii-content .wii-links .links-cards .links-card div button:hover {
   background: #F2D202;
@@ -659,7 +661,7 @@ h2 span {
   flex-direction: column;
 }
 .partners .part-content .part-title {
-  margin-top: 50px !important;
+  margin: 50px 0 !important;
 }
 .partners .part-content .logos {
   overflow: hidden;
@@ -700,6 +702,156 @@ h2 span {
 }
 /* ### DESKTOP ### */
 /* ### BIG DESKTOP ### */
+/* ### SECTION EVENT ### */
+.event {
+  width: 100%;
+}
+.event .event-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.event .event-content .event-title {
+  margin-top: 50px !important;
+}
+.event .event-content .event-lists {
+  display: flex;
+  flex-direction: column;
+  margin: 45px 0 !important;
+}
+.event .event-content .event-lists .list-event {
+  cursor: default;
+  width: 1000px;
+  height: 70px;
+  border-left: 5px solid #843A91;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.event .event-content .event-lists .list-event .event-date {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event .event-content .event-lists .list-event .event-name {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+}
+.event .event-content .event-lists .list-event .event-name p {
+  text-align: left;
+}
+.event .event-content .event-lists .list-event:hover {
+  border-left: 20px solid #843A91;
+}
+.event .event-content .event-button {
+  width: 1000px;
+  margin-bottom: 40px !important;
+}
+.event .event-content .event-button button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #F7E361;
+  border: none;
+  font-family: "lt-wave-regular";
+  color: #212529;
+  transition: all 0.3s ease;
+}
+.event .event-content .event-button button:hover {
+  background: #F2D202;
+}
+
+.event-contact {
+  width: 100%;
+  background: linear-gradient(0deg, rgba(74, 32, 81, 0.5) 0%, rgba(74, 32, 81, 0.5) 100%), url("../assets/image/bg/bg-contact.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.event-contact .ec-content {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.event-contact .ec-content .ec-title h2 {
+  color: #F2D202;
+}
+.event-contact .ec-content .ec-btn button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #F7E361;
+  border: none;
+  font-family: "lt-wave-regular";
+  color: #212529;
+  transition: all 0.3s ease;
+}
+.event-contact .ec-content .ec-btn button:hover {
+  background: #F2D202;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .event .event-content {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .event .event-content .event-lists {
+    width: 100%;
+  }
+  .event .event-content .event-lists .list-event {
+    width: 100%;
+  }
+  .event .event-content .event-lists .list-event .event-name p {
+    font-size: 12px !important;
+  }
+  .event .event-content .event-button {
+    width: 100%;
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .event .event-content {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .event .event-content .event-lists {
+    width: 100%;
+  }
+  .event .event-content .event-lists .list-event {
+    width: 100%;
+  }
+  .event .event-content .event-button {
+    width: 100%;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1080px) {
+  .event .event-content {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .event .event-content .event-lists {
+    width: 100%;
+  }
+  .event .event-content .event-lists .list-event {
+    width: 100%;
+  }
+  .event .event-content .event-button {
+    width: 100%;
+  }
+}
 /* ########### FOOTER ########### */
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
