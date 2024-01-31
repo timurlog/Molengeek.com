@@ -1,0 +1,67 @@
+/* ### SECTION CONTACT ### */
+.contact
+    width: 100%
+    background: #843A91
+    .contact-content
+        width: 100%
+        display: flex
+        .contact-map
+            width: 50%
+        .contact-text
+            padding: 50px
+            width: 50%
+            color: #FEFBEB
+            h2
+                text-align: left
+                position: relative
+            h2::after
+                position: absolute
+                content: ''
+                height: 3px
+                width: 150px
+                background: #F1D102
+                left: 0
+                bottom: -15px
+            p
+                color: #FEFBEB
+                line-height: 36px
+            .text-top
+                padding-top: 35px
+            .text-bot
+                padding-top: 35px
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px)
+    .contact
+        .contact-content
+            flex-direction: column-reverse
+            .contact-map
+                width: 100%
+                height: 400px
+            .contact-text
+                width: 100%
+
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px)
+    .contact
+        .contact-content
+            flex-direction: column-reverse
+            .contact-map
+                width: 100%
+                height: 400px
+            .contact-text
+                width: 100%
+
+
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1182px)
+    .contact
+        .contact-content
+            flex-direction: column-reverse
+            .contact-map
+                width: 100%
+                height: 400px
+            .contact-text
+                width: 100%

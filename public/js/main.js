@@ -77,3 +77,9 @@ for (let i = 0; i < eventDateTab.length; i++) {
     eventDateTab[i].innerHTML = eventDateArray[i]
     eventNameTab[i].innerHTML = eventNameArray[i]
 }
+
+document.querySelector('#molengeekName').innerHTML = data.molengeekInfo.name
+document.querySelector('#adress').innerHTML = data.molengeekInfo.address
+document.querySelector('#tva').innerHTML = data.molengeekInfo.tva
+document.querySelector('#tel').innerHTML = data.molengeekInfo.phone
+document.querySelector('#mail').innerHTML = data.molengeekInfo.email

@@ -316,6 +316,11 @@ h2 span {
   color: #843A91;
 }
 
+.fonts {
+  font-family: "lt-wave-regular";
+  font-size: 20px;
+}
+
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
 @media (max-width: 576px) {
@@ -767,9 +772,10 @@ h2 span {
   background: #F2D202;
 }
 
+/* ### SECTION EVENT 2 ### */
 .event-contact {
   width: 100%;
-  background: linear-gradient(0deg, rgba(74, 32, 81, 0.5) 0%, rgba(74, 32, 81, 0.5) 100%), url("../assets/image/bg/bg-contact.webp");
+  background: linear-gradient(0deg, rgba(74, 32, 81, 0.6) 0%, rgba(74, 32, 81, 0.6) 100%), url("../assets/image/bg/bg-contact.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -849,6 +855,87 @@ h2 span {
     width: 100%;
   }
   .event .event-content .event-button {
+    width: 100%;
+  }
+}
+/* ### SECTION CONTACT ### */
+.contact {
+  width: 100%;
+  background: #843A91;
+}
+.contact .contact-content {
+  width: 100%;
+  display: flex;
+}
+.contact .contact-content .contact-map {
+  width: 50%;
+}
+.contact .contact-content .contact-text {
+  padding: 50px;
+  width: 50%;
+  color: #FEFBEB;
+}
+.contact .contact-content .contact-text h2 {
+  text-align: left;
+  position: relative;
+}
+.contact .contact-content .contact-text h2::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 150px;
+  background: #F1D102;
+  left: 0;
+  bottom: -15px;
+}
+.contact .contact-content .contact-text p {
+  color: #FEFBEB;
+  line-height: 36px;
+}
+.contact .contact-content .contact-text .text-top {
+  padding-top: 35px;
+}
+.contact .contact-content .contact-text .text-bot {
+  padding-top: 35px;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .contact .contact-content {
+    flex-direction: column-reverse;
+  }
+  .contact .contact-content .contact-map {
+    width: 100%;
+    height: 400px;
+  }
+  .contact .contact-content .contact-text {
+    width: 100%;
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .contact .contact-content {
+    flex-direction: column-reverse;
+  }
+  .contact .contact-content .contact-map {
+    width: 100%;
+    height: 400px;
+  }
+  .contact .contact-content .contact-text {
+    width: 100%;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1182px) {
+  .contact .contact-content {
+    flex-direction: column-reverse;
+  }
+  .contact .contact-content .contact-map {
+    width: 100%;
+    height: 400px;
+  }
+  .contact .contact-content .contact-text {
     width: 100%;
   }
 }

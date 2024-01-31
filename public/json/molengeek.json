@@ -1,10 +1,10 @@
 {
     "molengeekInfo": {
         "name": "Molengeek",
-        "address": "Place de la Minoterie 10, 1080 Molenbeek-Saint-Jean",
+        "address": "Place de la Minoterie 10,<br>1080 Molenbeek-Saint-Jean",
         "phone": "0470 67 51 41",
         "email": "info@molengeek.com",
-        "tva": "BE 0655.835.212"
+        "tva": "TVA BE 0655.835.212"
     },
     "formations": {
         "formationsLongues": {
