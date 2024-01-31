@@ -939,6 +939,96 @@ h2 span {
     width: 100%;
   }
 }
+/* ### SECTION NEWSLETTER ### */
+.newsletter {
+  width: 100%;
+}
+.newsletter .newsletter-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter .newsletter-content .nl-title {
+  margin-top: 50px !important;
+}
+.newsletter .newsletter-content .nl-input {
+  margin-bottom: 50px !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px !important;
+}
+.newsletter .newsletter-content .nl-input form {
+  width: 40%;
+}
+.newsletter .newsletter-content .nl-input form input {
+  padding: 0 5px;
+  width: 100%;
+  height: 50px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #843A91;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+.newsletter .newsletter-content .nl-input form input:focus {
+  border-left: 3px solid #843A91;
+  border-right: 3px solid #843A91;
+  border-top: 3px solid #843A91;
+  border-radius: 8px;
+}
+.newsletter .newsletter-content .nl-input button {
+  cursor: pointer;
+  height: 50px;
+  width: 140px;
+  border-radius: 8px;
+  background: #F7E361;
+  border: none;
+  font-family: "lt-wave-regular";
+  color: #212529;
+  transition: all 0.3s ease;
+}
+.newsletter .newsletter-content .nl-input button:hover {
+  background: #F2D202;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .newsletter .newsletter-content .nl-input {
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter .newsletter-content .nl-input form {
+    width: 80%;
+  }
+  .newsletter .newsletter-content .nl-input button {
+    cursor: pointer;
+    height: 50px;
+    width: 140px;
+    border-radius: 8px;
+    background: #F7E361;
+    border: none;
+    font-family: "lt-wave-regular";
+    color: #212529;
+    transition: all 0.3s ease;
+  }
+  .newsletter .newsletter-content .nl-input button:hover {
+    background: #F2D202;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .newsletter .newsletter-content .nl-input form {
+    width: 60%;
+  }
+}
 /* ########### FOOTER ########### */
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
