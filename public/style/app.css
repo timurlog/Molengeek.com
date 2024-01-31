@@ -303,13 +303,13 @@ body {
 /* ############ MAIN ############ */
 p {
   color: #321536;
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 h2 {
   font-family: "lt-wave-bold";
   text-align: center;
-  color: #321536;
+  color: #321536 !important;
   font-size: 48px !important;
 }
 h2 span {
@@ -1228,6 +1228,151 @@ h2 span {
   }
   .navigation .navigation-content .navigation-cards {
     grid-template: " a b c d e";
+  }
+}
+/* ### SECTION WHY MOLENGEEK ### */
+.why-molengeek {
+  width: 100%;
+  background: #F6E361;
+}
+.why-molengeek .wm-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 100px;
+}
+.why-molengeek .wm-content .wm-texts {
+  width: 50%;
+  max-width: 695px;
+}
+.why-molengeek .wm-content .wm-texts .wm-title h2 {
+  text-align: left;
+}
+.why-molengeek .wm-content .wm-texts h4 {
+  padding: 10px 0;
+  line-height: 35px;
+}
+.why-molengeek .wm-content .wm-texts p {
+  padding: 10px 0;
+}
+.why-molengeek .wm-content .wm-video {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .why-molengeek .wm-content {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .why-molengeek .wm-content .wm-texts {
+    width: 100%;
+    max-width: 100%;
+  }
+  .why-molengeek .wm-content .wm-video {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .why-molengeek .wm-content {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .why-molengeek .wm-content .wm-texts {
+    width: 100%;
+    max-width: 100%;
+  }
+  .why-molengeek .wm-content .wm-video {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1250px) {
+  .why-molengeek .wm-content {
+    flex-direction: column;
+  }
+  .why-molengeek .wm-content .wm-texts {
+    width: 100%;
+    max-width: 100%;
+  }
+  .why-molengeek .wm-content .wm-video {
+    width: 100%;
+    justify-content: center;
+  }
+}
+/* ### SECTION TESTIMONIALS ### */
+.testimonials {
+  width: 100%;
+}
+.testimonials .test-content {
+  padding: 80px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.testimonials .test-content .test-v {
+  display: flex;
+  gap: 30px;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .testimonials .test-content {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .testimonials .test-content .test-v {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .testimonials .test-content .test-v iframe {
+    width: 100% !important;
+    height: auto;
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .testimonials .test-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .testimonials .test-content .test-v {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1250px) {
+  .testimonials .test-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .testimonials .test-content .test-v {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 /* ########### FOOTER ########### */

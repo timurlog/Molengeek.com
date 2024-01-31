@@ -1,0 +1,67 @@
+/* ### SECTION WHY MOLENGEEK ### */
+.why-molengeek
+    width: 100%
+    background: #F6E361
+    .wm-content
+        width: 100%
+        display: flex
+        justify-content: center
+        gap: 30px
+        padding: 50px 100px
+        .wm-texts
+            width: 50%
+            max-width: 695px
+            .wm-title
+                h2
+                    text-align: left
+            h4
+                padding: 10px 0
+                line-height: 35px
+            p
+                padding: 10px 0
+        .wm-video
+            width: 50%
+            display: flex
+            justify-content: right
+            align-items: center
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px)
+    .why-molengeek
+        .wm-content
+            flex-direction: column
+            padding: 50px
+            .wm-texts
+                width: 100%
+                max-width: 100%
+            .wm-video
+                width: 100%
+                height: fit-content
+                justify-content: center
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px)
+    .why-molengeek
+        .wm-content
+            flex-direction: column
+            padding: 50px
+            .wm-texts
+                width: 100%
+                max-width: 100%
+            .wm-video
+                width: 100%
+                justify-content: center
+                align-items: center
+
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1250px)
+    .why-molengeek
+        .wm-content
+            flex-direction: column
+            .wm-texts
+                width: 100%
+                max-width: 100%
+            .wm-video
+                width: 100%
+                justify-content: center
