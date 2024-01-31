@@ -1,0 +1,136 @@
+/* ### SECTION NAVIGATION ### */
+.navigation
+    width: 100%
+    .navigation-content
+        width: 100%
+        padding: 0 100px
+        .navigation-title
+            margin-top: 80px !important
+        .navigation-filters
+            display: flex
+            gap: 30px
+            button
+                padding-top: 30px
+                background: none
+                border: none
+                cursor: pointer
+                font-family: "lt-wave-regular"
+                color: #321536
+            .active
+                width: fit-content
+                position: relative
+            .active:after
+                position: absolute
+                content: ''
+                height: 3px
+                width: 100%
+                left: 0
+                bottom: -2px
+                background: #321536
+        .navigation-cards
+            padding-top: 50px
+            padding-bottom: 80px
+            display: grid
+            grid-template: ' a b c d '
+            grid-auto-columns: minmax(0, 1fr)
+            justify-items: center
+            gap: 20px
+            .navigation-card
+                padding: 30px
+                height: 400px
+                cursor: pointer
+                width: 100%
+                background: #843A91
+                border-radius: 8px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                h3
+                    transition: all .3s ease
+                    font-family: "lt-wave-bold"
+                    color: #FEFBEB
+                p
+                    padding: 5px 0
+                    color: #FEFBEB
+                ul
+                    padding: 0
+                    li
+                        font-weight: 600
+                        padding-bottom: 10px
+                        color: #F7E361
+                    li::before
+                        content: "\f0da"
+                        font-family: FontAwesome
+                        display: inline-block
+                        color: #F7E361
+                        font-size: 18px
+                        margin-right: 10px
+            .long:hover h3
+                color: #F7E361
+            .short
+                padding: 0
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                background: none
+                cursor: default
+                .mini-card
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    cursor: pointer
+                    width: 100%
+                    height: 22%
+                    background: #843A91
+                    border-radius: 8px
+                    .title
+                        font-size: 20px
+                        transition: all .3s ease
+                    .description
+                        font-size: 12px
+                .none
+                    background: none
+                    cursor: default
+                .mini-card:hover .title
+                    color: #F7E361
+
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px)
+    .navigation
+        .navigation-content
+            padding: 0 25px
+            .navigation-filters
+                display: flex
+                flex-direction: column
+                gap: 10px
+                button
+                    font-size: 14px
+            .navigation-cards
+                grid-template: ' a '
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px)
+    .navigation
+        .navigation-content
+            padding: 0 50px 
+            .navigation-cards
+                grid-template: ' a '
+
+
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1500px)
+    .navigation
+        .navigation-content
+            padding: 0 50px 
+            .navigation-cards
+                grid-template: ' a b '
+
+@media (min-width: 2000px)
+    .navigation
+        .navigation-content
+            padding: 0 150px 
+            .navigation-cards
+                grid-template: ' a b c d e'

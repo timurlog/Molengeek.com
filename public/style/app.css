@@ -1058,6 +1058,178 @@ h2 span {
     width: 60%;
   }
 }
+/* ### SECTION BANNER ### */
+#formationBanner {
+  height: 50vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../assets/image/banner-bg/formation-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+/* ### SECTION NAVIGATION ### */
+.navigation {
+  width: 100%;
+}
+.navigation .navigation-content {
+  width: 100%;
+  padding: 0 100px;
+}
+.navigation .navigation-content .navigation-title {
+  margin-top: 80px !important;
+}
+.navigation .navigation-content .navigation-filters {
+  display: flex;
+  gap: 30px;
+}
+.navigation .navigation-content .navigation-filters button {
+  padding-top: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "lt-wave-regular";
+  color: #321536;
+}
+.navigation .navigation-content .navigation-filters .active {
+  width: fit-content;
+  position: relative;
+}
+.navigation .navigation-content .navigation-filters .active:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -2px;
+  background: #321536;
+}
+.navigation .navigation-content .navigation-cards {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  display: grid;
+  grid-template: " a b c d ";
+  grid-auto-columns: minmax(0, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+.navigation .navigation-content .navigation-cards .navigation-card {
+  padding: 30px;
+  height: 400px;
+  cursor: pointer;
+  width: 100%;
+  background: #843A91;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navigation .navigation-content .navigation-cards .navigation-card h3 {
+  transition: all 0.3s ease;
+  font-family: "lt-wave-bold";
+  color: #FEFBEB;
+}
+.navigation .navigation-content .navigation-cards .navigation-card p {
+  padding: 5px 0;
+  color: #FEFBEB;
+}
+.navigation .navigation-content .navigation-cards .navigation-card ul {
+  padding: 0;
+}
+.navigation .navigation-content .navigation-cards .navigation-card ul li {
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #F7E361;
+}
+.navigation .navigation-content .navigation-cards .navigation-card ul li::before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #F7E361;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.navigation .navigation-content .navigation-cards .long:hover h3 {
+  color: #F7E361;
+}
+.navigation .navigation-content .navigation-cards .short {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  cursor: default;
+}
+.navigation .navigation-content .navigation-cards .short .mini-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: 22%;
+  background: #843A91;
+  border-radius: 8px;
+}
+.navigation .navigation-content .navigation-cards .short .mini-card .title {
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.navigation .navigation-content .navigation-cards .short .mini-card .description {
+  font-size: 12px;
+}
+.navigation .navigation-content .navigation-cards .short .none {
+  background: none;
+  cursor: default;
+}
+.navigation .navigation-content .navigation-cards .short .mini-card:hover .title {
+  color: #F7E361;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .navigation .navigation-content {
+    padding: 0 25px;
+  }
+  .navigation .navigation-content .navigation-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navigation .navigation-content .navigation-filters button {
+    font-size: 14px;
+  }
+  .navigation .navigation-content .navigation-cards {
+    grid-template: " a ";
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .navigation .navigation-content {
+    padding: 0 50px;
+  }
+  .navigation .navigation-content .navigation-cards {
+    grid-template: " a ";
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1500px) {
+  .navigation .navigation-content {
+    padding: 0 50px;
+  }
+  .navigation .navigation-content .navigation-cards {
+    grid-template: " a b ";
+  }
+}
+@media (min-width: 2000px) {
+  .navigation .navigation-content {
+    padding: 0 150px;
+  }
+  .navigation .navigation-content .navigation-cards {
+    grid-template: " a b c d e";
+  }
+}
 /* ########### FOOTER ########### */
 .footer {
   width: 100%;

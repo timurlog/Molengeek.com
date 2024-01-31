@@ -13,10 +13,9 @@
                 "duree": "6 mois",
                 "descriptif": "Apprends à coder un site internet de A à Z",
                 "condition": {
-                    "ageMax": "29 ans",
                     "situation": "Demandeur d'emploi",
                     "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "horaire": "Temps plein 9h / 17h"
                 }
             },
             "marketingDigital": {
@@ -24,10 +23,9 @@
                 "duree": "6 mois",
                 "descriptif": "Forme-toi au marketing digital",
                 "condition": {
-                    "ageMax": "29 ans",
                     "situation": "Demandeur d'emploi",
                     "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "horaire": "Temps plein 9h / 17h"
                 }
             },
             "webmaster360": {
@@ -35,10 +33,9 @@
                 "duree": "6 mois",
                 "descriptif": "Crée des sites performants et attractifs avec WordPress",
                 "condition": {
-                    "ageMax": null,
                     "situation": "Demandeur d'emploi",
                     "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "horaire": "Temps plein 9h / 17h"
                 }
             },
             "aws": {
@@ -46,10 +43,9 @@
                 "duree": "3 mois",
                 "descriptif": "Développe tes compétences en Cloud",
                 "condition": {
-                    "ageMax": "29 ans",
                     "situation": "Demandeur d'emploi",
                     "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "horaire": "Temps plein 9h / 17h"
                 }
             },
             "salesforceAdmin": {
@@ -57,10 +53,9 @@
                 "duree": "3 mois",
                 "descriptif": "Optimise un bon service client grâce à Salesforce",
                 "condition": {
-                    "ageMax": null,
                     "situation": "Demandeur d'emploi",
                     "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "horaire": "Temps plein 9h / 17h"
                 }
             }
         },
