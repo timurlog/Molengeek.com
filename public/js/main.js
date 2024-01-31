@@ -92,4 +92,4 @@ document.querySelectorAll('.footer-link')[3].setAttribute('href', data.reseauxSo
 let now = new Date();
 let year = now.getFullYear();
 
-document.querySelector('#year').innerHTML = year
+document.querySelector('.year').innerHTML = year
