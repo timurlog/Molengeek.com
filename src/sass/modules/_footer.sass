@@ -1,18 +1,91 @@
 /* ########### FOOTER ########### */
+.footer
+    width: 100%
+    background:#261029
+    .footer-content
+        width: 100%
+        .footer-links
+            padding-top: 80px
+            padding-bottom: 80px
+            text-align: center
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 60px
+            border-bottom: #321536 3px solid
+            a
+                font-size: 50px
+                color: #321536
+                height: 75px
+                width: 75px
+                display: flex
+                justify-content: center
+                align-items: center
+                text-decoration: none !important
+                background: #F7E361
+                border-radius: 8px
+                transition: all 0.3 ease
+            a:hover
+                background: #F2D202
+        .footer-text
+            width: 100%
+            padding-top: 80px
+            padding-bottom: 80px
+            text-align: center
+            display: flex
+            flex-direction: column  
+            justify-content: center
+            gap: 30px
+            align-items: center
+            img
+                width: 500px
+            p
+                color: #FFF
+            .copyright
+                color: #655068
+                a
+                    color: #655068
+                    text-decoration: none !important
 
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
 @media (max-width: 576px)
+    .footer
+        .footer-content
+            .footer-links
+                display: grid
+                grid-template: ' a b '
+                gap: 30px
+                a
+                    font-size: 30px
+                    height: 50px
+                    width: 50px
+            .footer-text
+                img
+                    width: 320px
+                p
+                    font-size: 14px
+                .copyright
+                    font-size: 14px
 
 
 /* ### TABLET ### */
 @media (min-width: 577px) and (max-width: 768px)
-
-
-/* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 1024px)
-
-
-/* ### BIG DESKTOP ### */
-@media (min-width: 1025px)
+    .footer
+        .footer-content
+            .footer-links
+                display: grid
+                grid-template: ' a b '
+                gap: 30px
+                a
+                    font-size: 30px
+                    height: 50px
+                    width: 50px
+            .footer-text
+                img
+                    width: 320px
+                p
+                    font-size: 14px
+                .copyright
+                    font-size: 14px

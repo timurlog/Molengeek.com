@@ -83,3 +83,13 @@ document.querySelector('#adress').innerHTML = data.molengeekInfo.address
 document.querySelector('#tva').innerHTML = data.molengeekInfo.tva
 document.querySelector('#tel').innerHTML = data.molengeekInfo.phone
 document.querySelector('#mail').innerHTML = data.molengeekInfo.email
+
+document.querySelectorAll('.footer-link')[0].setAttribute('href', data.reseauxSociaux.facebook)
+document.querySelectorAll('.footer-link')[1].setAttribute('href', data.reseauxSociaux.twitter)
+document.querySelectorAll('.footer-link')[2].setAttribute('href', data.reseauxSociaux.instagram)
+document.querySelectorAll('.footer-link')[3].setAttribute('href', data.reseauxSociaux.linkedin)
+
+let now = new Date();
+let year = now.getFullYear();
+
+document.querySelector('#year').innerHTML = year

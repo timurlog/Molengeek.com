@@ -443,7 +443,7 @@ h2 span {
   align-items: center;
 }
 .what-is-it .wii-content .wii-title {
-  margin-top: 50px !important;
+  margin-top: 80px !important;
 }
 .what-is-it .wii-content .wii-texts {
   margin-top: 25px !important;
@@ -457,7 +457,7 @@ h2 span {
   font-size: 24px;
 }
 .what-is-it .wii-content .wii-texts .text-list {
-  margin-bottom: 50px !important;
+  margin-bottom: 80px !important;
   margin-top: 25px !important;
   font-size: 28px;
   padding: 0;
@@ -480,7 +480,7 @@ h2 span {
 .what-is-it .wii-content .wii-links {
   width: 100%;
   background: #F7E361;
-  padding: 50px 0;
+  padding: 80px 0;
 }
 .what-is-it .wii-content .wii-links .links-cards {
   display: flex;
@@ -666,11 +666,11 @@ h2 span {
   flex-direction: column;
 }
 .partners .part-content .part-title {
-  margin: 50px 0 !important;
+  margin: 80px 0 !important;
 }
 .partners .part-content .logos {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 30px 0;
   white-space: nowrap;
 }
 .partners .part-content .logos .logos-slide {
@@ -717,12 +717,12 @@ h2 span {
   align-items: center;
 }
 .event .event-content .event-title {
-  margin-top: 50px !important;
+  margin-top: 80px !important;
 }
 .event .event-content .event-lists {
   display: flex;
   flex-direction: column;
-  margin: 45px 0 !important;
+  margin: 50px 0 !important;
 }
 .event .event-content .event-lists .list-event {
   cursor: default;
@@ -756,7 +756,7 @@ h2 span {
 }
 .event .event-content .event-button {
   width: 1000px;
-  margin-bottom: 40px !important;
+  margin-bottom: 80px !important;
 }
 .event .event-content .event-button button {
   cursor: pointer;
@@ -786,7 +786,8 @@ h2 span {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
   align-items: center;
 }
 .event-contact .ec-content .ec-title h2 {
@@ -876,6 +877,7 @@ h2 span {
   color: #FEFBEB;
 }
 .contact .contact-content .contact-text h2 {
+  color: #FEFBEB;
   text-align: left;
   position: relative;
 }
@@ -950,15 +952,15 @@ h2 span {
   align-items: center;
 }
 .newsletter .newsletter-content .nl-title {
-  margin-top: 50px !important;
+  margin-top: 80px !important;
 }
 .newsletter .newsletter-content .nl-input {
-  margin-bottom: 50px !important;
+  margin-bottom: 80px !important;
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 40px !important;
+  margin-top: 50px !important;
 }
 .newsletter .newsletter-content .nl-input form {
   width: 40%;
@@ -1003,6 +1005,29 @@ h2 span {
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .newsletter .newsletter-content .nl-input {
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter .newsletter-content .nl-input form {
+    width: 80%;
+  }
+  .newsletter .newsletter-content .nl-input button {
+    cursor: pointer;
+    height: 50px;
+    width: 140px;
+    border-radius: 8px;
+    background: #F7E361;
+    border: none;
+    font-family: "lt-wave-regular";
+    color: #212529;
+    transition: all 0.3s ease;
+  }
+  .newsletter .newsletter-content .nl-input button:hover {
+    background: #F2D202;
+  }
+}
 /* ### TABLET ### */
 @media (min-width: 577px) and (max-width: 768px) {
   .newsletter .newsletter-content .nl-input {
@@ -1034,10 +1059,108 @@ h2 span {
   }
 }
 /* ########### FOOTER ########### */
+.footer {
+  width: 100%;
+  background: #261029;
+}
+.footer .footer-content {
+  width: 100%;
+}
+.footer .footer-content .footer-links {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  border-bottom: #321536 3px solid;
+}
+.footer .footer-content .footer-links a {
+  font-size: 50px;
+  color: #321536;
+  height: 75px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  background: #F7E361;
+  border-radius: 8px;
+  transition: all 0.3 ease;
+}
+.footer .footer-content .footer-links a:hover {
+  background: #F2D202;
+}
+.footer .footer-content .footer-text {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.footer .footer-content .footer-text img {
+  width: 500px;
+}
+.footer .footer-content .footer-text p {
+  color: #FFF;
+}
+.footer .footer-content .footer-text .copyright {
+  color: #655068;
+}
+.footer .footer-content .footer-text .copyright a {
+  color: #655068;
+  text-decoration: none !important;
+}
+
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .footer .footer-content .footer-links {
+    display: grid;
+    grid-template: " a b ";
+    gap: 30px;
+  }
+  .footer .footer-content .footer-links a {
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+  }
+  .footer .footer-content .footer-text img {
+    width: 320px;
+  }
+  .footer .footer-content .footer-text p {
+    font-size: 14px;
+  }
+  .footer .footer-content .footer-text .copyright {
+    font-size: 14px;
+  }
+}
 /* ### TABLET ### */
-/* ### DESKTOP ### */
-/* ### BIG DESKTOP ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .footer .footer-content .footer-links {
+    display: grid;
+    grid-template: " a b ";
+    gap: 30px;
+  }
+  .footer .footer-content .footer-links a {
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+  }
+  .footer .footer-content .footer-text img {
+    width: 320px;
+  }
+  .footer .footer-content .footer-text p {
+    font-size: 14px;
+  }
+  .footer .footer-content .footer-text .copyright {
+    font-size: 14px;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
