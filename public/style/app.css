@@ -996,6 +996,10 @@ h2 span {
 .newsletter .newsletter-content .nl-input button:hover {
   background: #F2D202;
 }
+.newsletter .newsletter-content .nl-input button:active {
+  transition: all 0.1s ease;
+  background: #FAED9C;
+}
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
