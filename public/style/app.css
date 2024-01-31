@@ -791,7 +791,7 @@ h2 span {
   align-items: center;
 }
 .event-contact .ec-content .ec-title h2 {
-  color: #F2D202;
+  color: #F2D202 !important;
 }
 .event-contact .ec-content .ec-btn button {
   cursor: pointer;
@@ -877,7 +877,7 @@ h2 span {
   color: #FEFBEB;
 }
 .contact .contact-content .contact-text h2 {
-  color: #FEFBEB;
+  color: #FEFBEB !important;
   text-align: left;
   position: relative;
 }
@@ -1375,6 +1375,21 @@ h2 span {
     gap: 30px;
   }
 }
+/* ### SECTION FAQ ### */
+.faq {
+  width: 100%;
+  background: #FFF;
+}
+.faq .faq-title {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+/* ### TABLET ### */
+/* ### DESKTOP ### */
+/* ### BIG DESKTOP ### */
 /* ########### FOOTER ########### */
 .footer {
   width: 100%;
