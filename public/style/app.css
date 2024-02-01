@@ -1731,6 +1731,70 @@ h2 span {
 /* ### TABLET ### */
 /* ### DESKTOP ### */
 /* ### BIG DESKTOP ### */
+/* ### SECTION BANNER ### */
+#aboutBanner {
+  height: 50vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../assets/image/banner-bg/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+/* ### SECTION ABOUT US ### */
+.about {
+  width: 100%;
+}
+.about .about-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .about-content .about-title {
+  margin-top: 80px !important;
+  margin-bottom: 50px !important;
+}
+.about .about-content .about-text {
+  width: 935px;
+  text-align: center;
+  margin-bottom: 80px !important;
+}
+.about .about-content .about-text p {
+  padding: 15px 0;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .about .about-content {
+    padding: 0 25px;
+  }
+  .about .about-content .about-text {
+    width: 100%;
+  }
+  .about .about-content .about-text p {
+    font-size: 14px;
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .about .about-content {
+    padding: 0 50px;
+  }
+  .about .about-content .about-text {
+    width: 100%;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about .about-content {
+    padding: 0 50px;
+  }
+  .about .about-content .about-text {
+    width: 100%;
+  }
+}
 /* ########### FOOTER ########### */
 .footer {
   width: 100%;
