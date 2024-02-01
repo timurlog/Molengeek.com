@@ -1,0 +1,96 @@
+/* ### SECTION press ### */
+.press
+    width: 100%
+    .press-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        .press-title
+            margin-top: 80px !important
+        .press-lists
+            display: flex
+            flex-direction: column
+            margin: 50px 0 !important
+            .list-press
+                cursor: default
+                width: 1000px
+                height: 120px
+                border-left: 5px solid #843A91
+                display: flex
+                align-items: center
+                justify-content: space-between
+                transition: all 0.3s ease
+                .press-date
+                    width: 25%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                .press-name
+                    width: 60%
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+                    text-align: center
+                    p
+                        text-align: left
+            .list-press:hover
+                border-left: 20px solid #843A91
+        .press-button
+            width: 1000px
+            margin-bottom: 80px !important
+            button
+                cursor: pointer
+                padding: 10px 20px
+                border-radius: 8px
+                background: #F7E361
+                border: none
+                font-family: "lt-wave-regular"
+                color: #212529
+                transition: all .3s ease
+            button:hover
+                background: #F2D202
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px)
+    .press
+        .press-content
+            width: 100%
+            padding: 0 30px
+            .press-lists
+                width: 100%
+                .list-press
+                    width: 100%
+                    .press-name
+                        p
+                            font-size: 12px !important
+            .press-button
+                width: 100%
+
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px)
+    .press
+        .press-content
+            width: 100%
+            padding: 0 30px
+            .press-lists
+                width: 100%
+                .list-press
+                    width: 100%
+            .press-button
+                width: 100%
+
+
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1080px)
+    .press
+        .press-content
+            width: 100%
+            padding: 0 30px
+            .press-lists
+                width: 100%
+                .list-press
+                    width: 100%
+            .press-button
+                width: 100%

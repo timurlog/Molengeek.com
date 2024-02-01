@@ -1805,6 +1805,122 @@ h2 span {
     width: 100%;
   }
 }
+/* ### SECTION press ### */
+.press {
+  width: 100%;
+}
+.press .press-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.press .press-content .press-title {
+  margin-top: 80px !important;
+}
+.press .press-content .press-lists {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 !important;
+}
+.press .press-content .press-lists .list-press {
+  cursor: default;
+  width: 1000px;
+  height: 120px;
+  border-left: 5px solid #843A91;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.press .press-content .press-lists .list-press .press-date {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.press .press-content .press-lists .list-press .press-name {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.press .press-content .press-lists .list-press .press-name p {
+  text-align: left;
+}
+.press .press-content .press-lists .list-press:hover {
+  border-left: 20px solid #843A91;
+}
+.press .press-content .press-button {
+  width: 1000px;
+  margin-bottom: 80px !important;
+}
+.press .press-content .press-button button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #F7E361;
+  border: none;
+  font-family: "lt-wave-regular";
+  color: #212529;
+  transition: all 0.3s ease;
+}
+.press .press-content .press-button button:hover {
+  background: #F2D202;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .press .press-content {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .press .press-content .press-lists {
+    width: 100%;
+  }
+  .press .press-content .press-lists .list-press {
+    width: 100%;
+  }
+  .press .press-content .press-lists .list-press .press-name p {
+    font-size: 12px !important;
+  }
+  .press .press-content .press-button {
+    width: 100%;
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .press .press-content {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .press .press-content .press-lists {
+    width: 100%;
+  }
+  .press .press-content .press-lists .list-press {
+    width: 100%;
+  }
+  .press .press-content .press-button {
+    width: 100%;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1080px) {
+  .press .press-content {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .press .press-content .press-lists {
+    width: 100%;
+  }
+  .press .press-content .press-lists .list-press {
+    width: 100%;
+  }
+  .press .press-content .press-button {
+    width: 100%;
+  }
+}
 /* ### SECTION BANNER ### */
 #jobsBanner {
   height: 50vh;
@@ -1970,9 +2086,44 @@ h2 span {
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .contact-s .contact-s-content {
+    padding: 0 25px;
+  }
+  .contact-s .contact-s-content .formulaire {
+    gap: 50px;
+    width: 100%;
+  }
+  .contact-s .contact-s-content .contact-s-btn {
+    width: 100%;
+  }
+}
 /* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .contact-s .contact-s-content {
+    padding: 0 50px;
+  }
+  .contact-s .contact-s-content .formulaire {
+    gap: 50px;
+    width: 100%;
+  }
+  .contact-s .contact-s-content .contact-s-btn {
+    width: 100%;
+  }
+}
 /* ### DESKTOP ### */
-/* ### BIG DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-s .contact-s-content {
+    padding: 0 100px;
+  }
+  .contact-s .contact-s-content .formulaire {
+    gap: 50px;
+    width: 100%;
+  }
+  .contact-s .contact-s-content .contact-s-btn {
+    width: 100%;
+  }
+}
 /* ########### FOOTER ########### */
 .footer {
   width: 100%;
