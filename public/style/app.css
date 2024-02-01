@@ -1891,6 +1891,88 @@ h2 span {
     grid-template: " a b ";
   }
 }
+/* ### SECTION CONTACT US ### */
+.contact-s .contact-s-content {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-s .contact-s-content .contact-s-title {
+  margin-top: 80px !important;
+  margin-bottom: 50px !important;
+}
+.contact-s .contact-s-content .formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 900px;
+}
+.contact-s .contact-s-content .formulaire input {
+  padding: 0 5px;
+  width: 100%;
+  height: 50px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #843A91;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+.contact-s .contact-s-content .formulaire input:focus {
+  border-left: 3px solid #843A91;
+  border-right: 3px solid #843A91;
+  border-top: 3px solid #843A91;
+  border-radius: 8px;
+}
+.contact-s .contact-s-content .formulaire textarea {
+  resize: none;
+  padding: 5px;
+  width: 100%;
+  height: 350px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #843A91;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+.contact-s .contact-s-content .formulaire textarea:focus {
+  border-left: 3px solid #843A91;
+  border-right: 3px solid #843A91;
+  border-top: 3px solid #843A91;
+  border-radius: 8px;
+}
+.contact-s .contact-s-content .contact-s-btn {
+  width: 900px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.contact-s .contact-s-content .contact-s-btn button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #F7E361;
+  border: none;
+  font-family: "lt-wave-regular";
+  color: #212529;
+  transition: all 0.3s ease;
+}
+.contact-s .contact-s-content .contact-s-btn button:hover {
+  background: #F2D202;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+/* ### TABLET ### */
+/* ### DESKTOP ### */
+/* ### BIG DESKTOP ### */
 /* ########### FOOTER ########### */
 .footer {
   width: 100%;
