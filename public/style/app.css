@@ -352,14 +352,14 @@ h2 span {
   gap: 15px;
 }
 .banner .banner-content .slogan-p {
-  font-size: 40px;
+  font-size: 40px !important;
   width: 100%;
   font-weight: 600;
   color: #FFF;
   text-align: center;
 }
 .banner .banner-content .slogan-h {
-  font-size: 80px;
+  font-size: 80px !important;
   font-family: "lt-wave-bold";
   color: #FFF;
 }
@@ -369,7 +369,7 @@ h2 span {
 .banner .banner-content .mini-slogan {
   width: 100%;
   text-align: center;
-  font-size: 24px;
+  font-size: 24px !important;
   color: #FFF;
 }
 
@@ -1390,6 +1390,16 @@ h2 span {
 /* ### TABLET ### */
 /* ### DESKTOP ### */
 /* ### BIG DESKTOP ### */
+/* ### SECTION BANNER ### */
+#coworkingBanner {
+  height: 50vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../assets/image/banner-bg/coworking-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
 /* ########### FOOTER ########### */
 .footer {
   width: 100%;
