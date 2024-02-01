@@ -310,7 +310,7 @@ h2 {
   font-family: "lt-wave-bold";
   text-align: center;
   color: #321536 !important;
-  font-size: 48px !important;
+  font-size: 48px;
 }
 h2 span {
   color: #843A91;
@@ -394,7 +394,7 @@ h2 span {
     text-align: center;
   }
   .banner .banner-content .slogan-h {
-    font-size: 52px;
+    font-size: 52px I !important;
     font-family: "lt-wave-bold";
     color: #FFF;
   }
@@ -1400,6 +1400,319 @@ h2 span {
   background-attachment: fixed;
 }
 
+/* ### SECTION WIK ### */
+.wik-content {
+  position: relative;
+  width: 100%;
+}
+.wik-content .one {
+  position: absolute;
+  height: 600px;
+  width: 50%;
+}
+.wik-content .two {
+  padding: 50px 50px 50px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  height: 600px;
+  width: 65%;
+}
+.wik-content .one {
+  left: 0;
+  top: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../assets/image/banner-bg/coworking-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+.wik-content .two {
+  right: 0;
+  top: 0;
+  background: #FEFBEB;
+  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.wik-content h5 {
+  font-family: "lt-wave-bold";
+  font-size: 30px;
+  color: #321536 !important;
+}
+.wik-content p {
+  width: 70%;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .wik-content .one {
+    display: none;
+  }
+  .wik-content .two {
+    padding: 20px;
+    width: 100%;
+  }
+  .wik-content .one {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .wik-content .two {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .wik-content p {
+    width: 100%;
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .wik-content .one {
+    display: none;
+  }
+  .wik-content .two {
+    padding: 50px 50px 50px 50px;
+    width: 100%;
+  }
+  .wik-content .one {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .wik-content .two {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .wik-content p {
+    width: 100%;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .wik-content p {
+    width: 100%;
+  }
+}
+/* ### SECTION FREE ### */
+.free-content {
+  position: relative;
+  width: 100%;
+}
+.free-content .one {
+  padding: 50px 380px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  height: 600px;
+  width: 80%;
+}
+.free-content .two {
+  position: absolute;
+  height: 600px;
+  width: 40%;
+}
+.free-content .one {
+  left: 0;
+  top: 600px;
+  background: #FEFBEB;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+.free-content .two {
+  right: 0;
+  top: 600px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../assets/image/banner-bg/coworking-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(16% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.free-content h5 {
+  font-family: "lt-wave-bold";
+  font-size: 30px;
+  color: #321536 !important;
+}
+.free-content p {
+  width: 70%;
+}
+.free-content ul li {
+  font-weight: 600;
+}
+.free-content ul li span {
+  color: #843A91;
+}
+.free-content ul li::before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #843A91;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .free-content .one {
+    padding: 20px;
+    width: 100%;
+  }
+  .free-content .two {
+    display: none;
+  }
+  .free-content .one {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .free-content .two {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .free-content p {
+    width: 100%;
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .free-content .one {
+    padding: 50px 50px 50px 50px;
+    width: 100%;
+  }
+  .free-content .two {
+    display: none;
+  }
+  .free-content .one {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .free-content .two {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .free-content p {
+    width: 100%;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .wik-content p {
+    width: 100%;
+  }
+}
+/* ### SECTION TIME ### */
+.time-content {
+  position: relative;
+  width: 100%;
+}
+.time-content .one {
+  position: absolute;
+  height: 600px;
+  width: 50%;
+}
+.time-content .two {
+  padding: 50px 50px 50px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  height: 600px;
+  width: 65%;
+}
+.time-content .one {
+  left: 0;
+  top: 1200px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../assets/image/banner-bg/coworking-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+.time-content .two {
+  right: 0;
+  top: 1200px;
+  background: #FEFBEB;
+  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.time-content h5 {
+  font-family: "lt-wave-bold";
+  font-size: 30px;
+  color: #321536 !important;
+}
+.time-content p {
+  width: 70%;
+}
+.time-content ul li {
+  font-weight: 600;
+}
+.time-content ul li span {
+  color: #843A91;
+}
+.time-content ul li::before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #843A91;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+  .time-content .one {
+    display: none;
+  }
+  .time-content .two {
+    padding: 20px;
+    width: 100%;
+  }
+  .time-content .one {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .time-content .two {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .time-content p {
+    width: 100%;
+  }
+}
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+  .time-content .one {
+    display: none;
+  }
+  .time-content .two {
+    padding: 50px 50px 50px 50px;
+    width: 100%;
+  }
+  .time-content .one {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .time-content .two {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .time-content p {
+    width: 100%;
+  }
+}
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .time-content p {
+    width: 100%;
+  }
+}
 /* ########### FOOTER ########### */
 .footer {
   width: 100%;
@@ -1457,6 +1770,10 @@ h2 span {
 .footer .footer-content .footer-text .copyright a {
   color: #655068;
   text-decoration: none !important;
+}
+
+.margin-footer {
+  padding-top: 1800px;
 }
 
 /* ######### RESPONSIVE ######### */
