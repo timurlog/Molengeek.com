@@ -1843,7 +1843,6 @@ h2 span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  text-align: center;
 }
 .press .press-content .press-lists .list-press .press-name p {
   text-align: left;
