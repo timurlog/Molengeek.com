@@ -1,0 +1,72 @@
+/* ### SECTION JOBS ### */
+.jobs
+    width: 100%
+    .jobs-content
+        width: 100%
+        .jobs-title
+            margin-top: 80px !important
+            margin-bottom: 50px !important
+        .jobs-cards
+            margin-bottom: 80px !important
+            padding: 0 100px
+            width: 100%
+            display: grid
+            grid-template: ' a b c d '
+            gap: 30px
+            .jobs-card
+                cursor: pointer
+                padding: 30px
+                background: #F7E361
+                border-radius: 8px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                height: 400px
+                width: 100%
+                transition: all .3s ease
+                h3
+                    transition: all .3s ease
+                    font-family: "lt-wave-bold"
+                    color: #321536 !important
+                    font-size: 24px
+                button
+                    cursor: pointer
+                    padding: 10px 20px
+                    border-radius: 8px
+                    background: #843A91
+                    border: none
+                    font-family: "lt-wave-regular"
+                    color: #F7E361
+                    transition: all .3s ease
+                button:hover
+                    background: #632B6C
+            .jobs-card:hover
+                padding-top: 50px
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px)
+    .jobs
+        .jobs-content
+            .jobs-cards
+                padding: 0 25px
+                grid-template: ' a '
+
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px)
+    .jobs
+        .jobs-content
+            .jobs-cards
+                padding: 0 25px
+                grid-template: ' a '
+
+
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1480px)
+    .jobs
+        .jobs-content
+
+            .jobs-cards
+                padding: 0 50px
+                grid-template: ' a b '
